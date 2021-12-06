@@ -1,0 +1,29 @@
+{
+  "name": "Chizuru",
+  "description": "Bot written in Python using Pyrogram.",
+  "repository": "https://github.com/Heyaaman-UB/Chizuru",
+  "keywords" : [
+    "python",
+  ],
+  "stack": "heroku-20",
+  "env": {
+    "TOKEN": {
+           "description": "Your Bot's Api Token ,Get it from @BotFather",
+           "required": true
+    },
+    "DB_URI": {
+           "description": "Get this from @ARQRobot",
+           "required": true
+    },
+    "OWNER_ID": {
+           "description": "Language of Chat Bot ,list --> https://py-googletrans.readthedocs.io/en/latest/#googletrans-languages",
+           "value": "en",
+           "required": true
+    }
+  },
+  "buildpacks": [
+   {
+    "url": "heroku/python"
+   }
+  ]
+}
